@@ -1,0 +1,20 @@
+#%RAML 1.0
+title: trailer-api
+version: v1
+mediaType: 
+- application/json
+protocols:
+  - HTTP
+
+/trailer:
+  post:
+    body:
+      application/xml:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "status": SUCCESS
+              }
